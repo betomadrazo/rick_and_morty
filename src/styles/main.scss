@@ -1,1 +1,9 @@
-@import "colors"
+@import "colors";
+@import "fonts";
+@import "homeScreen";
+@import "searchBar";
+
+.app-container {
+  border-top: 5px solid $color-blue-medium;
+  min-height: 100vh;
+}

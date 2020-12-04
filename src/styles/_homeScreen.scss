@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: $color-orange;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    max-width: 90%;
+    width: 400px;
+  }
+  span {
+    bottom: 0;
+    color: $color-white;
+    font-family: $font-play;
+    font-size: 1.5rem;
+    right: calc(50% - 200px);
+    position: absolute;
+  }
+}

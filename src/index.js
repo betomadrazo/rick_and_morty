@@ -1,6 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import store from './store'
+import './styles/main.scss'
+import App from './App'
 
-const title = 'React with Webpack and Babel'
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
 
-ReactDOM.render(<div>{title}</div>, document.getElementById('root'))
+module.hot.accept()
