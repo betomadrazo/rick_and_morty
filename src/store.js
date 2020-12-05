@@ -1,8 +1,11 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
+import { characterSearchReducer } from './reducers/characterReducers'
 
-const reducer = combineReducers({})
+const reducer = combineReducers({
+  characterSearch: characterSearchReducer,
+})
 
 const middleware = [thunk]
 
