@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux'
 import logo from '../images/logo.png'
 import { searchCharacters } from '../actions/characterActions'
 
-
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const dispatch = useDispatch()

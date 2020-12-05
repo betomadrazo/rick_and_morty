@@ -11,17 +11,18 @@ const CardsTable = () => {
     <h1 style={(styles.loading, styles.message)}>LOADING...</h1>
   ) : error ? (
     <h1 style={(styles.error, styles.message)}>NO RESULTS, SEARCH ANOTHER</h1>
-  ) : (
-    characters && characters.length ?
+  ) : characters && characters.length ? (
     <div className='cards-table'>
-      {characters.map((character) => (
-        <Card character={character} />
-      ))}
+      <div class='cards-container'>
+        {characters.map((character) => (
+          <Card character={character} />
+        ))}
+      </div>
       {pagerInfo && (pagerInfo.prev || pagerInfo.next) && (
         <Pager pagerInfo={pagerInfo} />
       )}
-    </div> : null
-  )
+    </div>
+  ) : null
 }
 
 const styles = {

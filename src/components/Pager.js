@@ -18,23 +18,9 @@ const Pager = ({ pagerInfo }) => {
   const handleGoToPage = (e, page) => {
     e.preventDefault()
 
-    // let queryString = ''
-    // if (isNaN(page)) {
-    //   const tempURL = `https://a.com/${page}`
-    //   const searchParams = new URL(tempURL).searchParams
-    //   const currentPage = searchParams.get('page')
-    //   queryString = `name=${searchParams.get('name')}&page=${currentPage}`
-    //   setCurrPage(currentPage)
-    // } else {
-    //   const searchParams = new URL(prevPage || nextPage).searchParams
-    //   queryString = `name=${searchParams.get('name')}&page=${page}`
-    //   setCurrPage(page)
-    // }
-
-    console.log("searchTerm=>", currentSearch);
-    console.log("page=>", page);
-
-    dispatch(searchCharacters(currentSearch, page))
+    if (page !== currentPage) {
+      dispatch(searchCharacters(currentSearch, page))
+    }
   }
 
   return (
