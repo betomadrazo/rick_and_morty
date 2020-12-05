@@ -9,7 +9,7 @@ export const characterSearchReducer = (state = { characters: [] }, action) => {
     case CHARACTER_GET_REQUEST:
       return { loading: true, characters: [] }
     case CHARACTER_GET_SUCCESS:
-      return { loading: false, characters: action.payload.results }
+      return { loading: false, characters: action.payload.results, pagerInfo: action.payload.info }
     case CHARACTER_GET_FAIL:
       return { loading: false, error: action.payload }
     default:

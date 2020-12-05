@@ -5,10 +5,10 @@ import {
   CHARACTER_GET_FAIL,
 } from '../constants/characterConstants'
 
-export const searchCharacters = (name) => async dispatch => {
+export const searchCharacters = (term) => async dispatch => {
   try {
     dispatch({ type: CHARACTER_GET_REQUEST })
-    const { data } = await axios.get(`https://rickandmortyapi.com/api/character/?name=${name}`)
+    const { data } = await axios.get(`https://rickandmortyapi.com/api/character/?${term}`)
 
     dispatch({ type: CHARACTER_GET_SUCCESS, payload: data })
   } catch (error) {

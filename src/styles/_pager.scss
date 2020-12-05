@@ -1,0 +1,46 @@
+.pager {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  min-width: 300px;
+}
+
+.page-dot {
+  align-items: center;
+  background-color: purple;
+  border-radius: 50%;
+  color: purple;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: $font-oxygen;
+  font-size: 10px;
+  height: 15px;
+  justify-content: center;
+  width: 15px;
+  padding: 5px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-pink-light;
+    color: $color-white;
+    transform: scale(2.5);
+  }
+}
+
+.left-arrow,
+.right-arrow {
+  border-color: transparent purple;
+  border-style: solid;
+  cursor: pointer;
+  height: 0px;
+  width: 0px;
+}
+
+.left-arrow {
+  border-width: 15px 15px 15px 0px;
+}
+
+.right-arrow {
+  border-width: 15px 0px 15px 15px;
+}

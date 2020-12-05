@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import logo from '../images/logo.png'
 import { searchCharacters } from '../actions/characterActions'
 
@@ -12,7 +12,9 @@ const SearchBar = () => {
   const handleSearchCharacter = (e) => {
     e.preventDefault()
 
-    dispatch(searchCharacters(searchTerm))
+    const search = `name=${searchTerm}`
+
+    dispatch(searchCharacters(search))
   }
 
   return (
