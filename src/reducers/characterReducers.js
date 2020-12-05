@@ -2,6 +2,8 @@ import {
   CHARACTER_GET_REQUEST,
   CHARACTER_GET_SUCCESS,
   CHARACTER_GET_FAIL,
+  SET_CURRENT_SEARCH_TERM,
+  RESET_CURRENT_SEARCH_TERM,
 } from '../constants/characterConstants'
 
 export const characterSearchReducer = (state = { characters: [] }, action) => {
@@ -16,3 +18,4 @@ export const characterSearchReducer = (state = { characters: [] }, action) => {
       return state
   }
 }
+

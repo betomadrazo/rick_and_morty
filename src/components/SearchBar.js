@@ -8,13 +8,10 @@ const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const dispatch = useDispatch()
 
-
   const handleSearchCharacter = (e) => {
     e.preventDefault()
 
-    const search = `name=${searchTerm}`
-
-    dispatch(searchCharacters(search))
+    dispatch(searchCharacters(searchTerm))
   }
 
   return (

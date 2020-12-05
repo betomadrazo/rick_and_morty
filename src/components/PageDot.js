@@ -1,8 +1,8 @@
 import React from 'react'
 
-const PageDot = ({ pageNumber }) => {
+const PageDot = ({ pageNumber, active }) => {
   return (
-    <div className='page-dot'>
+    <div className={`page-dot ${active ? 'active' : ''}`}>
       {pageNumber}
     </div>
   )
