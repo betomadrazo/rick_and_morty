@@ -1,10 +1,9 @@
 .pager {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   height: 50px;
   align-items: center;
   min-width: 300px;
-  width: 60%;
   margin: 30px auto;
 }
 

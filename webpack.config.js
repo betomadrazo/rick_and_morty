@@ -53,6 +53,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
   ],
   performance: {
-    hints: false
-  }
+    hints: false,
+  },
 }
