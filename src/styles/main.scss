@@ -8,4 +8,10 @@
 .app-container {
   border-top: 5px solid $color-blue-medium;
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }

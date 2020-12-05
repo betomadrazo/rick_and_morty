@@ -1,2 +1,17 @@
+@font-face {
+  font-family: 'Get Schwifty';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/getschwifty.eot');
+  src: local('Get Schwifty'), local('GetSchwifty'),
+    url('../fonts/getschwifty.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/getschwifty.woff2') format('woff2'),
+    url('../fonts/getschwifty.woff') format('woff'),
+    url('../fonts/getschwifty.ttf') format('truetype'),
+    url('../fonts/getschwifty.svg#GetSchwifty') format('svg');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
 $font-oxygen: 'Oxygen', sans-serif;
+$font-getschwifty: 'Get Schwifty';

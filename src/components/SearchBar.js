@@ -16,7 +16,7 @@ const SearchBar = () => {
   }
 
   return (
-    <div>
+    <div className='search-container'>
       <div className='header'>
         <img src={logo} alt='Rick and Morty logo' />
         <span>Family Album 2.0</span>
