@@ -7,6 +7,10 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
   },
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: '[name].bundle.js',
+  },
   module: {
     rules: [
       {
@@ -30,10 +34,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['*', '.js', '.jsx'],
-  },
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: '[name].bundle.js',
   },
   devServer: {
     historyApiFallback: true,

@@ -10,8 +10,6 @@ export const searchCharacters = (name) => async dispatch => {
     dispatch({ type: CHARACTER_GET_REQUEST })
     const { data } = await axios.get(`https://rickandmortyapi.com/api/character/?name=${name}`)
 
-    console.log(data)
-
     dispatch({ type: CHARACTER_GET_SUCCESS, payload: data })
   } catch (error) {
     dispatch({

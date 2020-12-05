@@ -7,7 +7,7 @@ const CardsTable = () => {
   const { loading, error, characters } = characterSearch
 
   return (
-    <div>
+    <div className='cards-table'>
       {characters && characters.length
         ? characters.map((character) => <Card character={character} />)
         : 'nothing to show!!!'}
