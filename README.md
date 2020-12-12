@@ -1,7 +1,5 @@
 # Rick and Morty Family Album 2.0
 
-Aplicación hecha en ReactJS como examen práctico para una vacante en FonYou.
-
 ## Instalación
 
 Usar [npm](https://www.npmjs.com/) para instalar.
